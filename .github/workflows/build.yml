@@ -10,14 +10,11 @@ on:
 
 jobs:
   build_and_publish:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
-
-      - name: Restore dependencies
-        run: dotnet restore
 
       - name: Publish project
         run: dotnet publish GameLibrary/GameLibrary.csproj --configuration Release --output ./publish
