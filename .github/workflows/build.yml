@@ -1,4 +1,5 @@
-name: Build Project
+name: Build and Publish Project
+
 on:
   push:
     branches:
@@ -8,8 +9,9 @@ on:
       - master
 
 jobs:
-  build_and_test:
+  build_and_publish:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -22,5 +24,11 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build project
-        run: dotnet build --no-restore
+      - name: Publish project
+        run: dotnet publish GameLibrary/GameLibrary.csproj --configuration Release --output ./publish
+      
+      - name: Upload published artifacts
+        uses: actions/upload-artifact@v5
+        with:
+          name: app-artifacts
+          path: ./publish
