@@ -1,4 +1,4 @@
-name: Build Project
+name: Test Project
 on:
   push:
     branches:
@@ -19,8 +19,5 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      - name: Restore dependencies
-        run: dotnet restore
-
-      - name: Build project
-        run: dotnet build --no-restore
+      - name: Run unit tests
+        run: dotnet test 
