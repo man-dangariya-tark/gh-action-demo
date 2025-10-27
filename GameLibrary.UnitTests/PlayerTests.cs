@@ -16,7 +16,7 @@ public class PlayerTests
 
         // Assert
         // Assert.Equal(2, sut.Level);
-        sut.Level.Should().Be(1);
+        sut.Level.Should().Be(2);
         sut.Level.Should().BeGreaterThan(1);
         sut.Level.Should().BeGreaterThanOrEqualTo(2);
         sut.Level.Should().BePositive();
