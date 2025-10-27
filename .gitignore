@@ -1,0 +1,77 @@
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.app
+*.log
+*.pdb
+*.cache
+*.ilk
+*.ilk
+*.aps
+*.ncb
+*.suo
+*.user
+*.mssccprj
+*.vspscc
+*.VC.db
+*.VC.opendb
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNetCore
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.runtimeconfig.dev.json
+*.runtimeconfig.json
+*.deps.json
+
+# Visual Studio
+.vs/
+.vscode/
+.idea/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Rider
+.idea/
+
+# JetBrains
+*.DotSettings.user
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# Azure DevOps
+.vsts/
+
+# Local History
+.localhistory/
+
+# Logs
+*.log
